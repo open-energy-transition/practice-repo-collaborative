@@ -1,0 +1,25 @@
+name: Feature or data request
+description: Propose new functionality or new data
+title: "feat: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Why is this needed?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What needs to be done?
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: When is this issue done?
+      placeholder: "- [ ] ..."
+    validations:
+      required: true

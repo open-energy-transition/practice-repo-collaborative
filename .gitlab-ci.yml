@@ -1,0 +1,15 @@
+image: ghcr.io/astral-sh/uv:python3.12-bookworm
+
+stages: [check]
+
+pre-commit:
+  stage: check
+  script:
+    - uv sync
+    - uv run pre-commit run --all-files --show-diff-on-failure
+
+tests:
+  stage: check
+  script:
+    - uv sync
+    - uv run pytest

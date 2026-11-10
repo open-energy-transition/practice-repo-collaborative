@@ -1,0 +1,11 @@
+name: costs
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pyyaml>=6
+  - pytest>=8
+  - pre-commit>=4
+  - pip
+  - pip:
+      - -e .

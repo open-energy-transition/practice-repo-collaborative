@@ -1,0 +1,34 @@
+name: Bug report
+description: Something produces a wrong result or an error
+title: "fix: "
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happens?
+      description: Describe the wrong behaviour. Paste the full error message if there is one.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How to reproduce
+      description: A minimal code snippet that shows the problem.
+      render: python
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: When is this issue done?
+      placeholder: "- [ ] ..."
+    validations:
+      required: true

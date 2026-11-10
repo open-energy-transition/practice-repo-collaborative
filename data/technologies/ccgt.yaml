@@ -1,0 +1,6 @@
+name: ccgt
+carrier: gas
+investment_eur_per_kw: 830
+fom_percent_per_year: 3.3
+lifetime_years: 25
+source: "Danish Energy Agency, Technology Data for Generation of Electricity and District Heating (2025)"
