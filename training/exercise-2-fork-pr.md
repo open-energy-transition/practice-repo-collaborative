@@ -8,7 +8,7 @@ You need:
 - `<tech>`: the file name on your task card, for example `onwind`
 - `<you>`: the GitHub user name of the person whose laptop you use
 
-The repository is called `practive-repo-collaborative`, typo included. The Python package inside it is called `costs`.
+The repository is called `practice-repo-collaborative`. The Python package inside it is called `costs`.
 
 ## Choose your path
 
@@ -26,8 +26,8 @@ Both paths have the same five steps and end with the same pull request.
 
 ## 1. Fork (both paths)
 
-Open https://github.com/open-energy-transition/practive-repo-collaborative → **Fork** (top right) → *Create fork*.
-You now have your own copy at `github.com/<you>/practive-repo-collaborative`.
+Open https://github.com/open-energy-transition/practice-repo-collaborative → **Fork** (top right) → *Create fork*.
+You now have your own copy at `github.com/<you>/practice-repo-collaborative`.
 
 ## 2. Branch and add your file
 
@@ -38,9 +38,9 @@ You now have your own copy at `github.com/<you>/practive-repo-collaborative`.
 **a. Clone your fork and add upstream.** Already cloned before the session? Just run the last two lines.
 
 ```bash
-git clone https://github.com/<you>/practive-repo-collaborative.git
-cd practive-repo-collaborative
-git remote add upstream https://github.com/open-energy-transition/practive-repo-collaborative.git
+git clone https://github.com/<you>/practice-repo-collaborative.git
+cd practice-repo-collaborative
+git remote add upstream https://github.com/open-energy-transition/practice-repo-collaborative.git
 git remote -v
 ```
 
@@ -100,8 +100,8 @@ GitHub shows a yellow banner **Compare & pull request**. If it's gone: your fork
 
 Check before you click *Create pull request*:
 
-- [ ] base repository: `open-energy-transition/practive-repo-collaborative`, base: `main`
-- [ ] head repository: `<you>/practive-repo-collaborative`, compare: `data/<N>-<tech>`
+- [ ] base repository: `open-energy-transition/practice-repo-collaborative`, base: `main`
+- [ ] head repository: `<you>/practice-repo-collaborative`, compare: `data/<N>-<tech>`
 - [ ] title: `data: add <tech>`
 - [ ] description starts with `Closes #<N>`
 - [ ] checklist filled in. **Path B:** leave the two "passes locally" boxes unticked and write "Browser path, checked by CI only".
@@ -206,7 +206,7 @@ There are spaces at the end of a line, or the file doesn't end with a line break
 <details>
 <summary>My PR goes to my own fork, or shows many changes I didn't make</summary>
 
-The base repository can't be changed after the PR is open. Close the PR. Then: your fork → *Pull requests* → *New pull request*, and check that the base repository is `open-energy-transition/practive-repo-collaborative`.
+The base repository can't be changed after the PR is open. Close the PR. Then: your fork → *Pull requests* → *New pull request*, and check that the base repository is `open-energy-transition/practice-repo-collaborative`.
 
 </details>
 

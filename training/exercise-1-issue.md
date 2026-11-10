@@ -2,7 +2,7 @@
 
 Your pair has a task card from [task-cards.md](task-cards.md). A colleague asked for this change, but the maintainers of the project don't know you. Write an issue they can act on without asking you anything.
 
-Work in the **main repository**: https://github.com/open-energy-transition/practive-repo-collaborative. You don't have a fork yet; that's exercise 2.
+Work in the **main repository**: https://github.com/open-energy-transition/practice-repo-collaborative. You don't have a fork yet; that's exercise 2.
 
 ## Steps
 
@@ -46,7 +46,7 @@ This technology is not on any card.
 <details>
 <summary>I don't see the templates, only an empty text box</summary>
 
-You are probably in your fork. Go to `open-energy-transition/practive-repo-collaborative` and click *New issue* there.
+You are probably in your fork. Go to `open-energy-transition/practice-repo-collaborative` and click *New issue* there.
 
 </details>
 

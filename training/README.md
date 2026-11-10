@@ -21,7 +21,7 @@ issue → fork → branch → commit → pull request → CI → review → merg
 
 No git on your laptop? Exercise 2 has a browser-only path. Everything works with just a GitHub account.
 
-The repository is called `practive-repo-collaborative`, typo included. The Python package inside it is called `costs`.
+The repository is called `practice-repo-collaborative`. The Python package inside it is called `costs`.
 
 ## Exercises
 
