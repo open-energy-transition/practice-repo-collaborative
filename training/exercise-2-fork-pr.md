@@ -1,4 +1,4 @@
-# Exercise 2 · Fork, branch, pull request, CI (until 12:45, in pairs)
+# Exercise 2 · Fork, branch, pull request, CI (until 12:40, in pairs)
 
 **One fork, one laptop per pair.** One person types, the other reads the instructions and checks. Swap at step 3.
 
@@ -135,6 +135,22 @@ The trainers merge a few PRs live and the rest after the session. Your issue the
 **Finished early?**
 - Review another pair's PR: open it → *Files changed* → click a line → leave a comment, for example "Could you add the year to the source?"
 - Or take spare card 11 or 12 and do the whole cycle again on your own.
+
+## Afterwards: keep your fork in sync
+
+Your fork doesn't update itself. Before your next contribution:
+
+- **Browser:** your fork → **Sync fork** → *Update branch*.
+- **Terminal:**
+
+  ```bash
+  git switch main
+  git fetch upstream
+  git merge --ff-only upstream/main
+  git push origin main
+  ```
+
+Never commit to `main` in your fork; always start a new branch from an up-to-date `main`. `--ff-only` stops with an error if you did commit on `main`, so you can't make a mess by accident.
 
 ---
 

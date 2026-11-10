@@ -1,4 +1,4 @@
-# Exercise 1 · Turn a task card into an issue (8 min, in pairs)
+# Exercise 1 · Turn a task card into an issue (6 min, in pairs)
 
 Your pair has a task card from [task-cards.md](task-cards.md). A colleague asked for this change, but the maintainers of the project don't know you. Write an issue they can act on without asking you anything.
 
@@ -6,12 +6,12 @@ Work in the **main repository**: https://github.com/open-energy-transition/pract
 
 ## Steps
 
-1. **Search first (1 min).**
+1. **Search first.**
    - Open the *Issues* tab and type your technology in the search box. Delete `is:open` from the filter, so closed issues show up too.
    - Also look in the folder `data/technologies/`.
    - **Already exists?** Don't open an issue. Tell a trainer and take spare card 12.
 2. **Pick the template.** *New issue* → **Feature or data request**.
-3. **Write it (5 min).**
+3. **Write it (4 min).**
    - Title: replace the prefilled `feat: ` with `data: `, for example `data: add solar PV`.
    - *Why is this needed?* One or two sentences.
    - *What needs to be done?* Be concrete: which file, which values.

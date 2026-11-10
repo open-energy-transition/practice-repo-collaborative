@@ -29,8 +29,8 @@ You work in pairs. Count off 1–10; your number is your task card.
 
 | When | Exercise | Sheet |
 |---|---|---|
-| 12:08 | Turn your task card into an issue | [exercise-1-issue.md](exercise-1-issue.md) |
-| 12:20 | Fork, branch, pull request, CI, review | [exercise-2-fork-pr.md](exercise-2-fork-pr.md) |
+| 12:07 | Turn your task card into an issue | [exercise-1-issue.md](exercise-1-issue.md) |
+| 12:15 | Fork, branch, pull request, CI, review | [exercise-2-fork-pr.md](exercise-2-fork-pr.md) |
 | | Your task card | [task-cards.md](task-cards.md) |
 
 ## Rules of the game
