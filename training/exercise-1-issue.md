@@ -1,17 +1,22 @@
 # Exercise 1 · Turn a task card into an issue (8 min, in pairs)
 
-Your pair has a task card. A colleague asked for this change, but the maintainers of `costs` don't know you. Write an issue they can act on without asking you anything.
+Your pair has a task card from [task-cards.md](task-cards.md). A colleague asked for this change, but the maintainers of the project don't know you. Write an issue they can act on without asking you anything.
+
+Work in the **main repository**: https://github.com/open-energy-transition/practive-repo-collaborative. You don't have a fork yet; that's exercise 2.
 
 ## Steps
 
-1. **Search first (1 min).** Open the practice repository → *Issues*. Search for your technology, including closed issues. Also look at `data/technologies/`. Does it already exist?
-2. **Pick the template (1 min).** *New issue* → choose the template that fits. Bug or feature?
+1. **Search first (1 min).**
+   - Open the *Issues* tab and type your technology in the search box. Delete `is:open` from the filter, so closed issues show up too.
+   - Also look in the folder `data/technologies/`.
+   - **Already exists?** Don't open an issue. Tell a trainer and take spare card 12.
+2. **Pick the template.** *New issue* → **Feature or data request**.
 3. **Write it (5 min).**
-   - Title with a type prefix, for example `data: add onshore wind`.
+   - Title: replace the prefilled `feat: ` with `data: `, for example `data: add solar PV`.
    - *Why is this needed?* One or two sentences.
    - *What needs to be done?* Be concrete: which file, which values.
    - *Acceptance criteria:* a checklist that says when the issue is done.
-4. **Submit and note the issue number.** You need it for the branch name and the pull request.
+4. **Submit and note the issue number** (`#…` after the title). You need it for the branch name and the pull request.
 
 ## Checklist: would a stranger understand it?
 
@@ -22,14 +27,39 @@ Your pair has a task card. A colleague asked for this change, but the maintainer
 
 ## Example
 
-> **data: add onshore wind**
+This technology is not on any card.
+
+> **data: add lignite power plant**
 >
 > **Why is this needed?**
-> Models built with `costs` can't use onshore wind, one of the main technologies in European scenarios.
+> Models built with this library can't represent existing lignite capacity, which matters for coal phase-out scenarios.
 >
 > **What needs to be done?**
-> Add `data/technologies/onwind.yaml` with investment 1100 EUR/kW, FOM 1.2 %/a, lifetime 30 a, carrier `wind`.
+> Add `data/technologies/lignite.yaml`: carrier `lignite`, investment 1900 EUR/kW, fixed O&M 1.6 % per year, lifetime 40 years.
 >
 > **Acceptance criteria**
-> - [ ] `data/technologies/onwind.yaml` exists and passes the checks
-> - [ ] Values and source are documented in the file
+> - [ ] `data/technologies/lignite.yaml` exists with the values above
+> - [ ] CI is green
+
+## Hints
+
+<details>
+<summary>I don't see the templates, only an empty text box</summary>
+
+You are probably in your fork. Go to `open-energy-transition/practive-repo-collaborative` and click *New issue* there.
+
+</details>
+
+<details>
+<summary>What's a good acceptance criterion?</summary>
+
+Something a reviewer can check with yes or no: "the file exists", "CI is green", "the values match the card". "It works well" is not checkable.
+
+</details>
+
+<details>
+<summary>We finished early</summary>
+
+Read another pair's issue. Could you do the work from their description alone? Leave a friendly comment if something is missing.
+
+</details>
