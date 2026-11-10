@@ -8,6 +8,8 @@ You need:
 - `<tech>`: the file name on your task card, for example `onwind`
 - `<you>`: the GitHub user name of the person whose laptop you use
 
+Replace the placeholders including the `< >`. Example with issue `#14` and card `onwind`: branch `data/14-onwind`, file `data/technologies/onwind.yaml`.
+
 The repository is called `practice-repo-collaborative`. The Python package inside it is called `costs`.
 
 ## Choose your path
@@ -33,7 +35,7 @@ You now have your own copy at `github.com/<you>/practice-repo-collaborative`.
 
 ### Path T · Terminal
 
-**Using Codespaces?** In your fork: *Code* → *Codespaces* → *Create codespace on main*. It is already cloned and set up, so skip 2a and the `conda` lines in 2d.
+**Using Codespaces?** In your fork: *Code* → *Codespaces* → *Create codespace on main*. It is already cloned and set up: in 2a only run the `git remote add upstream` line, and skip the `conda` lines in 2d.
 
 **a. Clone your fork and add upstream.** Already cloned before the session? Just run the last two lines.
 
@@ -52,7 +54,11 @@ You should see `origin` (your fork) and `upstream` (the original).
 git switch -c data/<N>-<tech>
 ```
 
-**c. Create the file.** Read `CONTRIBUTING.md`, section 4. Copy `data/technologies/ccgt.yaml` to `data/technologies/<tech>.yaml` and change the values. Keep the keys exactly as they are.
+**c. Create the file.** Read `CONTRIBUTING.md`, section 4. Copy the example file, then open the copy in VS Code and change the values. Keep the keys exactly as they are.
+
+```bash
+cp data/technologies/ccgt.yaml data/technologies/<tech>.yaml
+```
 
 **d. Check locally (optional).** pre-commit only sees files git knows about, so `git add` first:
 

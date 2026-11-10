@@ -4,6 +4,8 @@ Your pair has a task card from [task-cards.md](task-cards.md). A colleague asked
 
 Work in the **main repository**: https://github.com/open-energy-transition/practice-repo-collaborative. You don't have a fork yet; that's exercise 2.
 
+One person opens the issue from their GitHub account. Best: the person whose laptop you use in exercise 2.
+
 ## Steps
 
 1. **Search first.**
