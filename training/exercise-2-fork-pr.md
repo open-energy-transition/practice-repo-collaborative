@@ -35,7 +35,7 @@ You now have your own copy at `github.com/<you>/practice-repo-collaborative`.
 
 ### Path T · Terminal
 
-**Using Codespaces?** In your fork: *Code* → *Codespaces* → *Create codespace on main*. It is already cloned and set up: in 2a only run the `git remote add upstream` line, and skip the `conda` lines in 2d.
+**Using Codespaces?** In your fork: *Code* → *Codespaces* → *Create codespace on main*. It is already cloned and set up: in 2a only run the `git remote add upstream` line, and in 2d skip the setup and run `pre-commit` directly.
 
 **a. Clone your fork and add upstream.** Already cloned before the session? Just run the last two lines.
 
@@ -64,8 +64,20 @@ cp data/technologies/ccgt.yaml data/technologies/<tech>.yaml
 
 ```bash
 git add data/technologies/<tech>.yaml
-conda env create -f environment.yaml   # only once, takes a few minutes
-conda activate costs
+```
+
+With uv:
+
+```bash
+uv run pre-commit run --all-files
+```
+
+With pip (the first three lines only once, in a new terminal only the `source` line):
+
+```bash
+python -m venv .venv
+source .venv/bin/activate      # Windows: .venv\Scripts\activate
+pip install -e . pytest pre-commit
 pre-commit run --all-files
 ```
 
@@ -224,7 +236,7 @@ The base repository can't be changed after the PR is open. Close the PR. Then: y
 | `git push` asks for a password, or is rejected | Use SSH or a personal access token (see the morning session), or switch to Path B |
 | Push rejected with `GH007` (private email) | `git config user.email "12345+you@users.noreply.github.com"` (your address from https://github.com/settings/emails), then `git commit --amend --reset-author -s --no-edit` and push again |
 | `error: remote upstream already exists` | Fine. It's already set; continue |
-| `pre-commit: command not found` | `conda activate costs` |
-| Creating the conda environment is slow or fails | Skip 2d and let CI run the checks |
+| `pre-commit: command not found` | With pip: `source .venv/bin/activate` (Windows: `.venv\Scripts\activate`). With uv: `uv run pre-commit …` |
+| `python -m venv` or `pip install` fails (proxy, missing package) | Skip 2d and let CI run the checks |
 
 </details>

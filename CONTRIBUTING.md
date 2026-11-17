@@ -16,17 +16,23 @@ Thank you for contributing! Please follow these rules so that maintainers can re
 ## 3. Commit
 
 - Sign off every commit: `git commit -s`. This certifies the [Developer Certificate of Origin](https://developercertificate.org/).
-- Run the checks locally before you push:
+- Run the checks locally before you push. With pip, set up an environment once:
 
   ```bash
-  conda env create -f environment.yaml
-  conda activate costs
+  python -m venv .venv
+  source .venv/bin/activate      # Windows: .venv\Scripts\activate
+  pip install -e . pytest pre-commit
+  ```
+
+  Then:
+
+  ```bash
   pre-commit install
   pre-commit run --all-files
   pytest
   ```
 
-  `pre-commit install` makes the checks run on every `git commit`. With uv instead of conda, prefix the commands with `uv run`.
+  With uv, skip the setup and prefix each command with `uv run`. `pre-commit install` makes the checks run on every `git commit`.
 
 ## 4. Technology data
 

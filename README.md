@@ -16,9 +16,18 @@
 
 ## Quick start
 
+With uv:
+
 ```bash
-conda env create -f environment.yaml
-conda activate costs
+uv run pytest
+```
+
+With pip:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate      # Windows: .venv\Scripts\activate
+pip install -e . pytest pre-commit
 pytest
 ```
 

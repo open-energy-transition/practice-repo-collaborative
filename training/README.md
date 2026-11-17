@@ -17,7 +17,12 @@ issue → fork → branch → commit → pull request → CI → review → merg
   ```
   Use your private GitHub address from https://github.com/settings/emails, or the email address of your GitHub account.
 - [ ] You can push to GitHub from this laptop. If you're not sure, test it in the morning sessions.
-- [ ] Optional: fork this repository, clone your fork, and run `conda env create -f environment.yaml`.
+- [ ] Optional: fork this repository, clone your fork, and set up Python in it: `uv run pytest` with uv, or with pip:
+  ```bash
+  python -m venv .venv
+  source .venv/bin/activate      # Windows: .venv\Scripts\activate
+  pip install -e . pytest pre-commit
+  ```
 
 No git on your laptop? Exercise 2 has a browser-only path. Everything works with just a GitHub account.
 
