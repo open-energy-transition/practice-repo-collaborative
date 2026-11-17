@@ -16,5 +16,6 @@ repos:
       - id: validate-technologies
         name: validate technology files
         entry: python scripts/validate_technologies.py
-        language: system
+        language: python
+        additional_dependencies: [pyyaml]
         files: ^data/technologies/.*\.yaml$

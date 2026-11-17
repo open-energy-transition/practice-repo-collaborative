@@ -18,17 +18,15 @@
 
 With uv:
 
-```bash
+```powershell
 uv run pytest
 ```
 
 With pip:
 
-```bash
-python -m venv .venv
-source .venv/bin/activate      # Windows: .venv\Scripts\activate
-pip install -e . pytest pre-commit
-pytest
+```powershell
+python -m pip install -e . pytest pre-commit
+python -m pytest
 ```
 
 ```python

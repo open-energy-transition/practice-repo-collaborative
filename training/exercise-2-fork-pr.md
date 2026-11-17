@@ -68,17 +68,15 @@ git add data/technologies/<tech>.yaml
 
 With uv:
 
-```bash
+```powershell
 uv run pre-commit run --all-files
 ```
 
-With pip (the first three lines only once, in a new terminal only the `source` line):
+With pip (the first line only once):
 
-```bash
-python -m venv .venv
-source .venv/bin/activate      # Windows: .venv\Scripts\activate
-pip install -e . pytest pre-commit
-pre-commit run --all-files
+```powershell
+python -m pip install -e . pytest pre-commit
+python -m pre_commit run --all-files
 ```
 
 Everything should say `Passed`. If not, read the message, fix the file, `git add` it again and rerun.
@@ -236,7 +234,8 @@ The base repository can't be changed after the PR is open. Close the PR. Then: y
 | `git push` asks for a password, or is rejected | Use SSH or a personal access token (see the morning session), or switch to Path B |
 | Push rejected with `GH007` (private email) | `git config user.email "12345+you@users.noreply.github.com"` (your address from https://github.com/settings/emails), then `git commit --amend --reset-author -s --no-edit` and push again |
 | `error: remote upstream already exists` | Fine. It's already set; continue |
-| `pre-commit: command not found` | With pip: `source .venv/bin/activate` (Windows: `.venv\Scripts\activate`). With uv: `uv run pre-commit …` |
-| `python -m venv` or `pip install` fails (proxy, missing package) | Skip 2d and let CI run the checks |
+| `pre-commit` is not recognized | Use `uv run pre-commit …` or `python -m pre_commit …` |
+| `python` opens the Microsoft Store | Use `py` instead of `python` |
+| `pip install` fails (proxy) | Skip 2d and let CI run the checks |
 
 </details>
