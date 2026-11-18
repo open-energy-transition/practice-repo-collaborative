@@ -1,0 +1,6 @@
+name: fffshore_wind
+carrier: wind
+investment_eur_per_kw: 1800
+fom_percent_per_year: 2.0
+lifetime_years: 30
+source: "Danish Energy Agency, Technology Data (2025), illustrative values"
