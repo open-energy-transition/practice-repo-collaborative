@@ -1,0 +1,6 @@
+name: nuclear
+carrier: uranium
+investment_eur_per_kw: 8000
+fom_percent_per_year: 1.4
+lifetime_years: 40
+source: "Danish Energy Agency, Technology Data (2025), illustrative values"
