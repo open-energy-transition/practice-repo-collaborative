@@ -1,0 +1,5 @@
+name: lignite
+carrier: lignite
+investment_eur_per_kw: 1900
+fom_percent_per_year: 1.6
+lifetime_years: 40
