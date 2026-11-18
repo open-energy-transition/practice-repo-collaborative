@@ -1,0 +1,6 @@
+name: onwind
+carrier: wind
+investment_eur_per_kw: 1100
+fom_percent_per_year: 1.2
+lifetime_years: 30
+source: "Danish Energy Agency, Technology Data (2025), illustrative values"
