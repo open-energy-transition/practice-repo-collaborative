@@ -33,7 +33,7 @@ Thank you for contributing! Please follow these rules so that maintainers can re
   python -m pytest
   ```
 
-  `pre-commit install` makes the checks run on every `git commit`.
+  `pre-commit install` makes the checks run on every `git commit`. pre-commit only sees files git knows about, so `git add` a new file before you run it.
 
 ## 4. Technology data
 

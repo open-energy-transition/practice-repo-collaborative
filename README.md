@@ -20,6 +20,7 @@ With uv:
 
 ```powershell
 uv run pytest
+uv run pre-commit run --all-files
 ```
 
 With pip:
@@ -27,7 +28,10 @@ With pip:
 ```powershell
 python -m pip install -e . pytest pre-commit
 python -m pytest
+python -m pre_commit run --all-files
 ```
+
+`pytest` tests the code. `pre-commit` checks the data files and the formatting. It only sees files git knows about, so `git add` a new file first.
 
 ```python
 from pathlib import Path
