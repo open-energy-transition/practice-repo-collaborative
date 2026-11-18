@@ -17,7 +17,7 @@ issue → fork → branch → commit → pull request → CI → review → merg
   ```
   Use your private GitHub address from https://github.com/settings/emails, or the email address of your GitHub account.
 - [ ] You can push to GitHub from this laptop. If you're not sure, test it in the morning sessions.
-- [ ] Optional: fork this repository, clone your fork, and run `uv run pytest` in it. Without uv: `python -m pip install -e . pytest pre-commit`, then `python -m pytest`.
+- [ ] Optional, for the local checks: fork this repository, clone your fork, and run `uv run pre-commit run --all-files` in it. Without uv: `python -m pip install -e . pytest pre-commit`, then `python -m pre_commit run --all-files`. Everything should say `Passed`. If this doesn't work on your laptop, that's fine: CI runs the same checks.
 
 No git on your laptop? Exercise 2 has a browser-only path. Everything works with just a GitHub account.
 
